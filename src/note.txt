@@ -1,0 +1,13 @@
+1. at first we should create firebase account 
+2. in Navbar useAuthstate for fetching firebase acocunt logged in info 
+// in sign in use provider and signInWithRedirect 
+3. creating database in firebase web and use config in vs firebase.js
+4.CHAT :  in message usestate we add our firebase acoount information like uid displayname text and...
+after that we create a Message page and map and pass the props to the message chatpage
+5. in <SendMessage /> create a text in messages database and equal it with input target 
+6. in messages we spicify two P tag with message.text and message.mame // 
+message.text : text which is equal to input target value
+message.name : firebase user name
+7. in message class use ternery operator ... if 
+        message.uid === auth.currentUser.uid 
+        use style.sent else recive ... => (  `${style.sent}` : `${style.recive}`)
